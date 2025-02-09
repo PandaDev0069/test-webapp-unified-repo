@@ -106,8 +106,8 @@ def get_tasks():
         print("Tasks Response:", task_list)
         return jsonify(task_list), 200
 
-    except Exception as e:
-        return jsonify({"msg": str(e)}), 422
+    except Exception:
+        return jsonify({"msg": "Something went wrong" }), 422
 
 
 
