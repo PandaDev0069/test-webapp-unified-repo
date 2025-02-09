@@ -1,0 +1,17 @@
+# Python-related
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+
+# Flask-related
+backend/instance/
+*.db
+*.sqlite
+
+# Node.js (Frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
