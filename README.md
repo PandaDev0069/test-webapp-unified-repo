@@ -18,15 +18,21 @@ A **personal productivity app** with **tasks, reminders, expenses, and streak tr
 ```sh
 git clone https://github.com/your-username/productivity-app.git
 cd productivity-app
-
+```
 
 ### 2️⃣ Install Backend Dependencies (Flask)
 ```sh
 cd backend
 pip install -r requirements.txt
-
+```
 
 ### 3️⃣ Install Frontend Dependencies (React)
 ```sh
 cd frontend
 npm install
+```
+### 4️⃣ Run the app
+```sh
+cd frontend
+npm start
+```
