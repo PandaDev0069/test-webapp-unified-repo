@@ -1,0 +1,370 @@
+/* 🌌 FUTURISTIC BACKGROUND (DARK MODE) */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1b1b1b 0%, #13162b 50%, #000000 100%);
+  background-attachment: fixed;
+  color: white;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease-in-out, color 0.3s;
+  background-size: 400% 400%;
+  animation: moveBackground 30s linear infinite;
+}
+
+/* 🌟 LIGHT MODE BACKGROUND */
+.dark {
+  background: linear-gradient(135deg, #ffffff 0%, #e3e6ed 50%, #d3d8e8 100%);
+  color: #2c3e50;
+}
+
+/* 🔥 ANIMATED BACKGROUND MOVEMENT */
+@keyframes moveBackground {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 100% 100%; }
+}
+
+/* 🎬 PAGE FADE-IN ANIMATION */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInPage 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔥 LAVA LAMP NAVIGATION BAR */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #34495e;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  height: 65px;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeInNav 0.8s ease-in-out forwards;
+}
+
+/* ✅ NAV CONTAINER */
+.nav-container {
+  display: flex;
+  position: relative;
+  gap: 30px;
+}
+
+/* ✅ NAV ITEMS */
+.nav .nav-item {
+  position: relative;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  z-index: 2;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.nav .nav-item:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* 🟢 ADVANCED LAVA LAMP ANIMATION */
+.nav .animation {
+  position: absolute;
+  height: 45px;
+  top: 8px;
+  background-color: #1abc9c;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(26, 188, 156, 0.5);
+  z-index: 1;
+  transition: left 0.4s ease-in-out, width 0.4s ease-in-out, background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.nav .animation:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ FIXED HOVER EFFECTS */
+.nav-item:nth-child(1):hover ~ .animation {
+  width: 120px;
+  left: 0;
+  background-color: #1abc9c;
+}
+.nav-item:nth-child(2):hover ~ .animation {
+  width: 130px;
+  left: 140px;
+  background-color: #e74c3c;
+}
+.nav-item:nth-child(3):hover ~ .animation {
+  width: 110px;
+  left: 280px;
+  background-color: #3498db;
+}
+.nav-item:nth-child(4):hover ~ .animation {
+  width: 140px;
+  left: 400px;
+  background-color: #9b59b6;
+}
+
+/* ✅ NAVBAR BUTTONS (DARK MODE & LOGIN) */
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInButtons 1s ease-in-out 0.4s forwards;
+}
+
+.dark-mode-toggle, .logout-button, .login-button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.dark-mode-toggle {
+  background-color: #2c3e50;
+  color: white;
+}
+
+.logout-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.login-button {
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.dark-mode-toggle:hover,
+.logout-button:hover,
+.login-button:hover {
+  transform: scale(1.1);
+}
+
+/* 🎭 BUTTON ANIMATIONS */
+.button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 🟢 CARD HOVER EFFECT */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+}
+
+/* 🔵 FUTURISTIC INPUT FIELDS */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.6);
+}
+
+/* 🔄 HOVER TILT EFFECT */
+.card {
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: perspective(1000px) rotateX(3deg) rotateY(3deg);
+}
+
+/* 🎬 PAGE ENTRY ANIMATIONS */
+@keyframes fadeInNav {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInButtons {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 RESPONSIVE FIXES */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+/* 🟢 GLASSMORPHISM EFFECT */
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.glass:hover {
+  transform: scale(1.03);
+}
+
+/* 🔥 APPLY GLASSMORPHISM TO NAVBAR */
+.nav {
+  background: rgba(52, 73, 94, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* 🟣 APPLY GLASSMORPHISM TO DASHBOARD & CARDS */
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🟡 GLASS EFFECT FOR MODALS & POPUPS */
+.modal {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 🟠 SMOOTH BUTTON EFFECTS */
+.button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* 🚀 CUSTOM NOTIFICATION STYLE */
+.Toastify__toast {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  font-size: 16px !important;
+}
+
+.Toastify__progress-bar {
+  background: #1abc9c !important;
+}
+
+
+/* 🎭 NAVBAR PARALLAX MOVEMENT */
+.nav {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav:hover {
+  transform: translateY(-3px);
+}
+
+
+/* 📊 Fix Chart Size */
+.chart-container {
+  width: 100%;
+  max-width: 500px; /* ✅ Prevents excessive width */
+  height: 250px; /* ✅ Fix height to prevent infinite scaling */
+  margin: auto;
+}
+
+canvas {
+  max-height: 250px !important; /* ✅ Ensures charts stay within the container */
+}
