@@ -31,8 +31,14 @@ pip install -r requirements.txt
 cd frontend
 npm install
 ```
-### 4️⃣ Run the app
+### 4️⃣ Run the Backend
+```sh
+cd backend
+flask run
+```
+
+### 5️⃣ Run the Frontend
 ```sh
 cd frontend
-npm start
+npm run dev
 ```
