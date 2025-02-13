@@ -11,6 +11,7 @@
     "start": "concurrently \"cd ../backend && venv\\Scripts\\activate && flask run\" \"npm run dev\""
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
     "axios": "^1.7.9",
     "chart.js": "^4.4.7",
     "react": "^19.0.0",
